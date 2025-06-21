@@ -1,5 +1,6 @@
 package com.pongo.tutorialmod;
 
+import com.pongo.tutorialmod.block.ModBlocks;
 import com.pongo.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,5 +15,6 @@ public class TutorialMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
