@@ -2,6 +2,7 @@ package com.pongo.tutorialmod;
 
 import com.pongo.tutorialmod.block.ModBlocks;
 import com.pongo.tutorialmod.item.ModItems;
+import com.pongo.tutorialmod.item.ModitemGroups;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -14,6 +15,8 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModitemGroups.registerModItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
